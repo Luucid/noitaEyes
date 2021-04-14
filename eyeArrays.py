@@ -115,10 +115,12 @@ west4 = np.array([[3,0,1,0,1,4,3,0,4,0,0,0,1,0,0,0,0,0,0,1,0,2,1,3,2,3,3,1,2,0,1
 
 def plotEyeTable(table, c, u, r, d, l, alp=0.3):
     xc = 0
-    yc = 8
+    xShift = 0.5          #How much every second row is shifted to the right, 0.5 is how it is displayed in game.
     
-    # color = {'.r':0, '.y':1, '.c':2, '.m':3, 'ok':4 }
-    color = {'.b':0, '^k':1, '>k':2, 'vk':3, 'ok':4 }
+    # yc = len(table)       #to start plotting at the specified tables own height.
+    yc = 12               #to start plotting all tables at y = 12.
+    
+    color = {'.c':0, '^g':1, '>b':2, 'vr':3, '<k':4 }
     clr = list(color.keys())
     alphaReset = alp
     
@@ -126,7 +128,7 @@ def plotEyeTable(table, c, u, r, d, l, alp=0.3):
         xc = 0
         for j in i:
             alp = alphaReset
-            if (not c and j == 0):
+            if (not c and j == 0):       #to change alpha on only one direction, remove 'not' and set alp to something between 0-1.
                 alp = 0
             elif (not u and j == 1):
                 alp = 0
@@ -138,7 +140,7 @@ def plotEyeTable(table, c, u, r, d, l, alp=0.3):
                 alp = 0
             
             if(yc%2 != 0):
-                plt.plot((xc+0.5), yc, clr[j], alpha=alp)
+                plt.plot((xc+xShift), yc, clr[j], alpha=alp)
             else:
                 plt.plot(xc, yc, clr[j], alpha=alp)
                 
@@ -152,20 +154,21 @@ def plotEyeTable(table, c, u, r, d, l, alp=0.3):
 ######################################################################################################################################################
 ###############################################################################################################################################################################
 
+#############################################################
+###########(table, center, up,  right, down, left, alpha)########
+#############################################################
 
+plotEyeTable(east1, True, True, True, True, True, 1)
+plotEyeTable(west1, True, True, True, True, True, 1)
+plotEyeTable(east2, True, True, True, True, True, 1)
 
+plotEyeTable(west2, True, True, True, True, True, 1)
+plotEyeTable(east3, True, True, True, True, True, 1)
+plotEyeTable(west3, True, True, True, True, True, 1)
 
-# plotEyeTable(east1, False, False, False, False, True, 1)
-plotEyeTable(west1, False, False, False, False, True, 1)
-# plotEyeTable(east2, False, False, False, False, True, 1)
-
-plotEyeTable(west2, False, False, False, False, True, 1)
-# plotEyeTable(east3, False, False, False, False, True, 1)
-plotEyeTable(west3, False, False, False, False, True, 1)
-
-# plotEyeTable(east4, False, False, False, False, True, 1)
-plotEyeTable(west4, False, False, False, False, True, 1)
-# plotEyeTable(east5, False, False, False, False, True, 1)
+plotEyeTable(east4, True, True, True, True, True, 1)
+plotEyeTable(west4, True, True, True, True, True, 1)
+plotEyeTable(east5, True, True, True, True, True, 1)
 
 
 
