@@ -120,7 +120,13 @@ def plotEyeTable(table, c, u, r, d, l, alp=0.3):
     # yc = len(table)       #to start plotting at the specified tables own height.
     yc = 12               #to start plotting all tables at y = 12.
     
-    color = {'.c':0, '^g':1, '>b':2, 'vr':3, '<k':4 }
+    
+#####to change markers, change the symbol before the letter in color, e.g for green circle, 'og'
+#####view markers here https://matplotlib.org/stable/api/markers_api.html
+
+    color = {'.c':0, '^g':1, '>b':2, 'vr':3, 'Dk':4 }
+    
+    
     clr = list(color.keys())
     alphaReset = alp
     
@@ -158,17 +164,19 @@ def plotEyeTable(table, c, u, r, d, l, alp=0.3):
 ###########(table, center, up,  right, down, left, alpha)########
 #############################################################
 
-plotEyeTable(east1, True, True, True, True, True, 1)
-plotEyeTable(west1, True, True, True, True, True, 1)
-plotEyeTable(east2, True, True, True, True, True, 1)
+    #False, False, False, False, True, 1
 
-plotEyeTable(west2, True, True, True, True, True, 1)
-plotEyeTable(east3, True, True, True, True, True, 1)
-plotEyeTable(west3, True, True, True, True, True, 1)
+plotEyeTable(east1, False, False, False, False, True, 1)
+plotEyeTable(west1, False, False, False, False, True, 1)
+plotEyeTable(east2, False, False, False, False, True, 1)
 
-plotEyeTable(east4, True, True, True, True, True, 1)
-plotEyeTable(west4, True, True, True, True, True, 1)
-plotEyeTable(east5, True, True, True, True, True, 1)
+plotEyeTable(west2, False, False, False, False, True, 1)
+plotEyeTable(east3, False, False, False, False, True, 1)
+plotEyeTable(west3, False, False, False, False, True, 1)
+
+plotEyeTable(east4, False, False, False, False, True, 1)
+plotEyeTable(west4, False, False, False, False, True, 1)
+plotEyeTable(east5, False, False, False, False, True, 1)
 
 
 
