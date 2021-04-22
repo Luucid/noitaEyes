@@ -9,7 +9,8 @@ east1 = np.array([[2,0,1,0,1,3,2,2,3,3,0,4,0,4,1,1,3,0,2,3,2,1,1,4,3,1,3,0,3,3,0
                   [0,1,4,0,0,3,2,1,2,1,1,4,1,3,0,0,4,1,1,1,0,1,0,0,2,4,1,2,4,1,0,0,4,0,3,1,0,0,1],
                   [0,4,0,3,3,1,4,3,2,3,4,1,1,2,2,1,0,1,0,1,0,0,4,0,1,2,0,4,1,2,4,4,2,4,4,2,4,0,2],
                   [1,3,3,3,1,2,2,0,3,3,0,1,0,3,1,1,3,1,1,1,2,1,1,2,1,0,3,2,2,3,1,4],
-                  [1,3,1,0,4,2,4,2,2,4,1,3,0,3,0,4,1,1,0,2,0,3,1,2,3,2,0,4,3,1,3]])
+                   [1,3,1,0,4,2,4,2,2,4,1,3,0,3,0,4,1,1,0,2,0,3,1,2,3,2,0,4,3,1,3]])
+east1flip = np.flip(east1, 0);
 
 east2 = np.array([[1,2,1,0,1,3,2,2,3,3,0,4,0,4,1,1,3,0,2,3,2,1,1,4,3,1,3,0,3,3,0,0,4,0,2,4,0,0,4], 
                   [1,3,2,0,4,1,2,2,0,0,0,1,4,2,2,2,4,2,1,2,2,2,2,0,1,1,0,0,0,3,2,0,1,3,4,1,1,3,2], 
@@ -21,6 +22,8 @@ east2 = np.array([[1,2,1,0,1,3,2,2,3,3,0,4,0,4,1,1,3,0,2,3,2,1,1,4,3,1,3,0,3,3,0
                   [0,2,0,1,4,2,2,4,0,3,1,2,0,3,1,3,3,0,2,3,1,0,0,0,1,0,3,3,1,0,4,4,1,2,0,1,4,2,2],
                   [0,3,4,2,0,1,0,4,3,1,0,1,1,0,0,2,0,0,1,2,4],
                   [1,3,1,4,0,2,0,2,2,0,2,0,1,4,1,3,2,2,3,1,1]])
+east2flip = np.flip(east2, 0);
+
 
 east3 = np.array([[2,2,1,0,1,4,3,0,4,0,0,0,1,0,0,3,0,2,2,2,0,2,3,1,2,2,2,2,3,2,1,4,4,1,4,4,2,1,1],
                   [3,3,2,0,4,1,0,0,2,2,2,2,4,3,1,3,4,1,0,0,3,2,4,2,0,0,0,0,1,0,2,2,0,0,4,2,4,3,1],
@@ -34,7 +37,7 @@ east3 = np.array([[2,2,1,0,1,4,3,0,4,0,0,0,1,0,0,3,0,2,2,2,0,2,3,1,2,2,2,2,3,2,1
                   [4,1,0,2,1,0,1,0,3,3,0,0,4,3,2,0,3,1,4,1,2,1,1,1,4,2,2,3,3,0,4,0,3,4,0,0,0,4,1],
                   [0,4,1,2,4,0,1,2,3,0,4],
                   [0,4,2,3,0,1,0,1,0,4]])
-
+east3flip = np.flip(east3, 0);
 
 east4 = np.array([[1,0,1,0,1,4,3,0,4,0,0,0,1,0,0,0,0,0,0,1,0,2,1,3,2,3,3,1,2,0,1,4,2,1,3,3,0,0,3],
                   [2,3,2,0,4,1,0,0,2,2,2,2,4,3,1,2,1,2,4,3,0,4,3,0,3,0,0,1,1,0,2,0,3,4,2,1,1,3,0],
@@ -46,7 +49,7 @@ east4 = np.array([[1,0,1,0,1,4,3,0,4,0,0,0,1,0,0,0,0,0,0,1,0,2,1,3,2,3,3,1,2,0,1
                   [4,3,2,3,3,1,4,1,1,0,3,2,4,0,3,2,0,0,1,2,2,1,0,3,1,1,2,4,3,1,4,4,0,1,2,0,2,3,1],
                   [1,2,2,0,2,4,2,3,0,1,0,1,3,1,1,2,3,2,2,1,3,0,3],
                   [3,4,2,1,2,1,0,2,2,0,1,0,0,3,2,3,0,3,4,0,3,4]])
-                  
+east4flip = np.flip(east4, 0);                 
 
 east5 = np.array([[1,1,1,0,1,4,3,0,4,0,0,0,1,0,0,0,0,0,0,1,0,2,1,3,2,3,3,1,2,0,1,4,3,0,4,4,1,3,3],
                   [3,3,2,0,4,1,0,0,2,2,2,2,4,3,1,2,1,2,4,3,0,4,3,0,3,0,0,1,1,0,2,1,1,1,1,2,4,3,0],
@@ -58,6 +61,8 @@ east5 = np.array([[1,1,1,0,1,4,3,0,4,0,0,0,1,0,0,0,0,0,0,1,0,2,1,3,2,3,3,1,2,0,1
                   [0,2,0,2,0,3,0,0,2,2,4,0,0,1,0,1,2,0,4,4,2,3,1,1,0,4,2,1,1,1,1,4,2,0,3,1,1,0,2],
                   [1,3,1,2,2,4,2,2,0,2,2,2,0,4,1],
                   [2,3,2,4,4,2,1,0,1,3,3,1,4,3,1]])
+east5flip = np.flip(east5, 0);
+
 
 
 west1 = np.array([[3,1,1,0,1,3,2,2,3,3,0,4,0,4,1,1,3,0,2,3,2,1,1,4,3,1,3,0,3,3,0,0,4,0,2,4,0,0,4],
@@ -68,6 +73,8 @@ west1 = np.array([[3,1,1,0,1,3,2,2,3,3,0,4,0,4,1,1,3,0,2,3,2,1,1,4,3,1,3,0,3,3,0
                   [4,0,3,4,3,1,4,0,1,2,2,2,1,1,1,3,4,0,2,1,0,3,0,1,4,1,3,3,4,1,2,2,1,3,3,0,1,3,2],
                   [0,2,4,1,4,2,2,1,4,2,2,2,0,3,0,2,4,2,0,0,1,2,3,2,1,2,4,0,2,3,2,3,2,0,1,4,0,3],
                   [3,1,0,1,3,2,2,1,1,2,1,3,0,2,0,3,2,2,2,2,0,0,4,2,2,3,1,0,3,1,3,2,2,4,1,1,3]])
+west1flip = np.flip(west1, 0);
+
 
 
 west2 = np.array([[3,0,1,0,1,4,3,0,4,2,3,1,1,1,1,1,3,0,1,0,3,2,0,0,1,1,4,2,1,1,1,4,2,0,4,2,1,4,4],
@@ -78,6 +85,8 @@ west2 = np.array([[3,0,1,0,1,4,3,0,4,2,3,1,1,1,1,1,3,0,1,0,3,2,0,0,1,1,4,2,1,1,1
                   [2,0,3,4,0,1,2,3,0,0,4,1,2,2,2,2,1,3,1,3,2,2,2,0,2,3,0,2,4,2,1,4,0,2,1,1,4,4,0],
                   [1,2,2,2,0,1,0,0,0,0,1,2,1,4,3,1,0,1,2,3,3,3,1,2,0,1,0,2,2,4,2,0,3,2,2,1],
                   [0,1,1,0,1,0,1,0,1,3,2,1,2,3,1,1,0,3,0,3,2,0,3,0,2,4,1,3,2,0,3,2,2,0,3,0]])
+
+west2flip = np.flip(west2, 0);
 
 
 west3 = np.array([[1,1,1,0,1,4,3,0,4,0,4,4,0,2,3,1,0,1,0,3,3,2,3,2,1,2,0,1,1,3,2,4,0,0,3,2,0,2,3],
@@ -91,6 +100,8 @@ west3 = np.array([[1,1,1,0,1,4,3,0,4,0,4,4,0,2,3,1,0,1,0,3,3,2,3,2,1,2,0,1,1,3,2
                   [1,2,0,2,2,4,0,2,2,2,3,4,2,0,3,0,3,3,1,2,0,2,4,4,0,4,0,2,0,0],
                   [0,0,2,1,2,1,1,0,0,1,4,1,1,0,2,2,4,2,1,0,3,4,0,2,4,1,1,4,4,2]])
 
+west3flip = np.flip(west3, 0);
+
 
 west4 = np.array([[3,0,1,0,1,4,3,0,4,0,0,0,1,0,0,0,0,0,0,1,0,2,1,3,2,3,3,1,2,0,1,4,0,0,4,0,0,0,2],
                   [2,3,2,0,4,1,0,0,2,2,2,2,4,3,1,2,1,2,4,3,0,4,3,0,3,0,0,1,1,0,2,2,2,1,1,3,1,4,2],
@@ -103,6 +114,10 @@ west4 = np.array([[3,0,1,0,1,4,3,0,4,0,0,0,1,0,0,0,0,0,0,1,0,2,1,3,2,3,3,1,2,0,1
                   [2,2,4,3,1,4,1,1,4,0,4,2,1,2,1,1,1,4,1,4,0,1,3,0],
                   [0,2,0,2,3,1,0,0,0,0,3,1,0,0,0,1,0,2,1,4,0,0,1,1]])
 
+west4flip = np.flip(west4, 0);
+
+
+######################################################################################################################################################
 
 
 
@@ -111,47 +126,136 @@ west4 = np.array([[3,0,1,0,1,4,3,0,4,0,0,0,1,0,0,0,0,0,0,1,0,2,1,3,2,3,3,1,2,0,1
 ######################################################################################################################################################
 
 
+# plt.axis([-31, 88,-18, 38])  #same distance between each row.
+# plt.grid('k', linestyle='-', linewidth=0.3)
 
-
-def plotEyeTable(table, c, u, r, d, l, alp=0.3):
-    xc = 0
-    xShift = 0.5          #How much every second row is shifted to the right, 0.5 is how it is displayed in game.
-    
-    # yc = len(table)       #to start plotting at the specified tables own height.
-    yc = 12               #to start plotting all tables at y = 12.
-    
+######################################################################################################################################################
+######################################################################################################################################################
+######################################################################################################################################################
     
 #####to change markers, change the symbol before the letter in color, e.g for green circle, 'og'
 #####view markers here https://matplotlib.org/stable/api/markers_api.html
 
-    color = {'.c':0, '^g':1, '>b':2, 'vr':3, 'Dk':4 }
+
+
+def plot(xc, yc, alp, xShift, clr):
+    if(yc%2 != 0):
+        plt.plot((xc+xShift), yc, clr, alpha=alp)
+    else:
+        plt.plot(xc, yc, clr, alpha=alp)
+        
+        
+
+def plotEyeTable(table, c, u, r, d, l, alp=0.3, pause=0):
+    xc = 0
+    xShift = 0.5        #How much every second row is shifted to the right, 0.5 is how it is displayed in game.   
+    # yc = len(table)       #to start plotting at the specified tables own height.
+    yc = 12               #to start plotting all tables at y = 12.
     
-    
+    # color = {'.c':0, '^g':1, '>b':2, 'vr':3, 'sk':4 } #shapes matching eye direction
+    color = {'sc':0, 'sg':1, 'sr':2, 'sb':3, 'sk':4 }   #all squares.
     clr = list(color.keys())
-    alphaReset = alp
     
+    if(pause > 0):
+        plt.pause(pause)
+        
     for i in table:
         xc = 0
         for j in i:
-            alp = alphaReset
-            if (not c and j == 0):       #to change alpha on only one direction, remove 'not' and set alp to something between 0-1.
-                alp = 0
-            elif (not u and j == 1):
-                alp = 0
-            elif (not r and j == 2):
-                alp = 0
-            elif (not d and j == 3):
-                alp = 0
-            elif (not l and j == 4):
-                alp = 0
-            
-            if(yc%2 != 0):
-                plt.plot((xc+xShift), yc, clr[j], alpha=alp)
-            else:
-                plt.plot(xc, yc, clr[j], alpha=alp)
-                
+            # alp = alphaReset
+            if (c and j == 0):       #to change alpha on only one direction, remove 'not' and set alp to something between 0-1.
+                plot(xc, yc, alp, xShift, clr[j])
+            elif (u and j == 1):
+                plot(xc, yc, alp, xShift, clr[j])
+            elif (r and j == 2):
+                plot(xc, yc, alp, xShift, clr[j])
+            elif (d and j == 3):
+                plot(xc, yc, alp, xShift, clr[j])
+            elif (l and j == 4):
+                plot(xc, yc, alp, xShift, clr[j])
             xc+=1
         yc-=1
+                
+               
+           
+        
+          
+           
+                
+
+
+def genTri(msg, base='b5'):
+    msgLen = 0
+    for row in msg:
+        for i in row:
+            msgLen+=1
+    
+
+    trig = np.array([[0, 0, 0]]* (msgLen//3))
+    r = 0    
+    c = 1
+  
+    
+    for i in range(1, len(msg), 2):
+        c = 1
+        while(c < len(msg[i-1]) and c < len(msg[i])):
+           
+            if(r % 2 == 0): #even
+                trig[r][1] = msg[i-1][c]                
+                trig[r][0] = msg[i-1][c-1]
+                trig[r][2] = msg[i][c-1]
+       
+            else: #odd             
+                trig[r][1] = msg[i][c]                
+                trig[r][0] = msg[i][c+1]
+                trig[r][2] = msg[i-1][c+1]                 
+                c += 3                
+            
+            r += 1
+            
+            
+    if(trig[-1][0] == 0 and trig[-1][1] == 0 and trig[-1][2] == 0):
+        trig[-1][1] = msg[-2][c]               
+        trig[-1][0] = msg[-2][c-1]
+        trig[-1][2] = msg[-1][c-1]
+    
+    if(base == 'b5'):
+        return base5(trig)
+    elif(base == 'b10'):
+        return base10(base5(trig))
+    else:
+        return trig
+        
+def base5(trigArr):
+    
+    bs5 = []
+     
+    for i in range(len(trigArr)):
+        tmp = ""
+        for j in range(len(trigArr[i])):
+         
+            tmp += str(trigArr[i][j])
+        bs5.append(tmp)
+    return bs5
+    
+
+def base10(trigArr):
+    bs10 = []
+    
+    for val in trigArr:
+        bs10.append((int(val[0]) * 25) + (int(val[1]) * 5) + int(val[2]))
+    return bs10   
+
+
+
+def plotAlongX(arr, color = "-r"):
+    n = len(arr)
+    x = np.arange(0, n)
+    y = []
+    for val in arr:
+        y.append(int(val))
+        
+    plt.plot(x, y, color)
 
 
 
@@ -164,19 +268,62 @@ def plotEyeTable(table, c, u, r, d, l, alp=0.3):
 ###########(table, center, up,  right, down, left, alpha)########
 #############################################################
 
-    #False, False, False, False, True, 1
 
-plotEyeTable(east1, False, False, False, False, True, 1)
-plotEyeTable(west1, False, False, False, False, True, 1)
-plotEyeTable(east2, False, False, False, False, True, 1)
 
-plotEyeTable(west2, False, False, False, False, True, 1)
-plotEyeTable(east3, False, False, False, False, True, 1)
-plotEyeTable(west3, False, False, False, False, True, 1)
 
-plotEyeTable(east4, False, False, False, False, True, 1)
-plotEyeTable(west4, False, False, False, False, True, 1)
-plotEyeTable(east5, False, False, False, False, True, 1)
+# plotEyeTable(east1, True, True, True, True, True, 0.0)
+# plotEyeTable(west1, True, True, True, True,True, 0.2)
+# plotEyeTable(east2, True, True, True, True, True, 0.2)
+
+# lotEyeTable(west2, True, True, True, True, True, 0.1)
+# plotEyeTable(east3, True, True, True, True, False, 0.1)
+# plotEyeTable(west3, True, True, True, True, False, 0.1)
+
+# plotEyeTable(east4, True, True, True, True, True, 0.1)
+# plotEyeTable(west4, True, True, True, True, False, 0.1)
+# plotEyeTable(east5, True, True, True, True, True, 0.1)
+
+
+# plt.show()  ###if not using spyder, or if the plot wont show up, un-comment this line.
+
+
+##################################################################
+#########################TRIAGRAMS################################
+##################################################################
+
+#######################BASE 10####################################
+
+e1t10 = genTri(east1, 'b10')
+w1t10 = genTri(west1, 'b10')
+e2t10 = genTri(east2, 'b10')
+
+w2t10 = genTri(west2, 'b10')
+e3t10 = genTri(east3, 'b10')
+w3t10 = genTri(west3, 'b10')
+
+e4t10 = genTri(east4, 'b10')
+w4t10 = genTri(west4, 'b10')
+e5t10 = genTri(east5, 'b10')
+   
+
+#########################BASE 5###################################
+
+
+e1t5 = genTri(east1, 'b5')
+w1t5 = genTri(west1, 'b5')
+e2t5 = genTri(east2, 'b5')
+
+w2t5 = genTri(west2, 'b5')
+e3t5 = genTri(east3, 'b5')
+w3t5 = genTri(west3, 'b5')
+
+e4t5 = genTri(east4, 'b5')
+w4t5 = genTri(west4, 'b5')
+e5t5 = genTri(east5, 'b5')
+
+##################################################################
+
+
 
 
 
